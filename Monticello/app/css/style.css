@@ -4861,18 +4861,6 @@ div.gm-bundled-control div.gmnoprint {
 	z-index: 10;
 	bottom: 49px;
 	left: 50%;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display:         flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	        align-items: center;
 	border: 1px solid white;
 	border-radius: 50%;
 	height: 40px;
@@ -4881,6 +4869,10 @@ div.gm-bundled-control div.gmnoprint {
 .first-screen__scroll-down img {
 	width: 10px;
 	height: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .first-screen__scroll-down:hover {
 	border: 1px solid transparent;
@@ -5332,30 +5324,18 @@ div.gm-bundled-control div.gmnoprint {
 }
 
 .next {
-	-webkit-transform: translate(14%, 16%) rotate(-90deg);
-	    -ms-transform: translate(14%, 16%) rotate(-90deg);
-	        transform: translate(14%, 16%) rotate(-90deg);
+	-webkit-transform: translate(-50%, -50%) rotate(-90deg);
+	    -ms-transform: translate(-50%, -50%) rotate(-90deg);
+	        transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .previous {
-	-webkit-transform: translate(-1%, 16%) rotate(90deg);
-	    -ms-transform: translate(-1%, 16%) rotate(90deg);
-	        transform: translate(-1%, 16%) rotate(90deg);
+	-webkit-transform: translate(-50%, -50%) rotate(90deg);
+	    -ms-transform: translate(-50%, -50%) rotate(90deg);
+	        transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .link-wrapper {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display:         flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	        align-items: center;
 	border: 1px solid white;
 	border-radius: 50%;
 	height: 40px;
@@ -5364,6 +5344,9 @@ div.gm-bundled-control div.gmnoprint {
 .link-wrapper img {
 	width: 10px;
 	height: 6px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .uk-position-relative {
